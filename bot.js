@@ -26,7 +26,7 @@ bot.on('message', message => {
     if (message.channel.type == "dm") return;
     if (!message.content.startsWith(prefix)) return;
     if (cmd) {
-        cmd.run(bot, message, args, discord, config)
+        cmd.run(bot, message, args, Discord)
     }
 })
 
