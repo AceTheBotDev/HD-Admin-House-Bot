@@ -1,5 +1,5 @@
 module.exports.run = (bot, message, args, Discord) => {
-   let verifiedRole = bot.guild.roles.cache.get("829766467238494278")
+   let verifiedRole = message.guild.roles.cache.get("829766467238494278")
    let member = message.author.member()
    
    member.roles.add(verifiedRole)
