@@ -7,7 +7,6 @@ var prefix = ";;"
 
 bot.on("ready", () => {
     console.log("I'm ready!")
-    bot.user.setActivity(`Looking for ${config.prefix}help`)
 })
 
 fs.readdir("./commands/", (err, files) => {
