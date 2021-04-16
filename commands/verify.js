@@ -1,6 +1,6 @@
 module.exports.run = (bot, message, args, Discord) => {
    let verifiedRole = message.guild.roles.cache.get("829766467238494278")
-   let member = message.author.member()
+   let member = message.author
    
    member.roles.add(verifiedRole)
   message.channel.send("Member verified!")
